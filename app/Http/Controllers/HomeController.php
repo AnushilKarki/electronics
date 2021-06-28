@@ -26,7 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::take(30)->get();
+        $products = Product::take(30)->simplePaginate(6);
         $categories = Category::whereNull('parent_id')->get();
 
   $featuredproducts = Product::where('id','LIKE','2')->get();

@@ -132,7 +132,7 @@
             <span>Rating</span>
         </div>
         <p>{{ $product->description }}</p>
-        <strong class="price"><span>{{ $product->selling_price }}</span> </strong>
+        <strong class="price">{{ $product->selling_price }} </strong>
         <a class="fas fa-shopping-cart" href="{{route('cart.add', $product->id)}}"><button class="btn">add to cart</button></a>
 
     </div>

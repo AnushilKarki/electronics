@@ -110,14 +110,6 @@
         </div>
 
 
-        @if($product->product_images != null)
-     @foreach(json_decode($product->product_images) as $images)
-        <div class="small-image">
-            <img src="{{ Voyager::image( $images ) }}" alt="">
-    
-        </div>
-     @endforeach
-     @endif
     </div>
 
     <div class="content">
@@ -132,7 +124,7 @@
             <span>Rating</span>
         </div>
         <p>{{ $product->description }}</p>
-        <strong class="price"><span>{{ $product->selling_price }}</span> </strong>
+        <strong class="price">{{ $product->selling_price }} </strong>
         <a class="fas fa-shopping-cart" href="{{route('cart.add', $product->id)}}"><button class="btn">add to cart</button></a>
 
     </div>

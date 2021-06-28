@@ -43,8 +43,7 @@
                           
                             <button type="submit" for="search" class="fas fa-search"> </button>
                         </form>
-                        <script async src="https://cse.google.com/cse.js?cx=26f674c4c20aecd0d"></script>
-<div class="gcse-search"></div>
+                       
     </div>
 
 </div>
@@ -139,7 +138,7 @@
         <div class="info">
             <h3>{{ $product->name }}</h3>
             <div class="subInfo">
-                <strong class="price"> ₹1000/- <span>{{ $product->selling_price }}</span> </strong>
+                <strong class="price"> {{ $product->selling_price }}  </strong>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -157,10 +156,12 @@
     </div>
 
     @endforeach
- 
-
+   
 </div>
-
+ <br><br>
+    <h2 style="text-align: center;">
+ {{ $products->onEachSide(5)->links() }}
+</h2>
 </section>
 
 <!-- arrival section ends -->
