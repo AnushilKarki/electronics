@@ -162,7 +162,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
   Darryldecode\Cart\CartServiceProvider::class,
-        Maatwebsite\Excel\ExcelServiceProvider::class,
+        
        
         Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
@@ -233,7 +233,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+       
         'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
         'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
